@@ -4,8 +4,10 @@ echo "-------------------Welcome to Gambling Simulator Program-------------"
 
 STAKE=100
 BET=1
+
 BetAmount=$STAKE
 
+#Function for bet win or loose
 function betting()
 {
 	Number=$((RANDOM%2))
@@ -21,3 +23,11 @@ function betting()
 	echo $BetAmount
 }
 betting
+
+#function for maximum and mininmum limit 
+function Limit()
+{
+	maxLimit=$(($BetAmount+$BetAmount*50/100))
+	minLimit=$(($BetAmount-$BetAmount*50/100))
+}
+Limit
