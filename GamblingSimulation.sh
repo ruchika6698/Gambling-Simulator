@@ -86,6 +86,7 @@ function luckydayornot()
 betting
 luckydayornot
 
+#if won would like to continue or not
 if [ $totalStake -gt 0 ]
 then
 	read -p "do you want to countinue 1.Yes 2.No :" toCountinue
